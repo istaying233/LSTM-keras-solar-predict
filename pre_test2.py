@@ -1,7 +1,7 @@
 import numpy as np
 import pandas as pd
-All = pd.read_csv('F:/VScode/Pylearn/Test_1/data/APF10.7.csv', index_col=0)
-den = pd.read_csv('F:/VScode/Pylearn/Test_1/data/CHAMP0423.csv')
+All = pd.read_csv('data/APF10.7.csv', index_col=0)
+den = pd.read_csv('data/CHAMP0423.csv')
 All = All.values
 den = den.values
 Kp = [0, 1, 2, 3, 4, 5, 6, 7]
@@ -27,5 +27,5 @@ for h in range(23):
     for k in range(1440):
         F107_aLL.append(F107[h])
 res = np.hstack((Kp_all, Ap_all, F107_aLL, den)) 
-np.savetxt('F:/VScode/Pylearn/Test_1/data/CHAMPkpapdensity.csv',res, delimiter=',')       
+np.savetxt('data/CHAMPkpapdensity.csv',res, delimiter=',')       
 B = 1
