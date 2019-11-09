@@ -24,7 +24,7 @@ def plot_results(predicted_data, true_data):
     #plt.pause(5)
     #plt.close()
     plt.show()
-    fig.savefig('F:/VScode/Pylearn/Test_1/figures/fig_predict.png')
+    fig.savefig('figures/fig_predict.png')
 
 
 def plot_results_multiple(predicted_data, true_data, prediction_len):
@@ -40,7 +40,7 @@ def plot_results_multiple(predicted_data, true_data, prediction_len):
 
 
 def main():
-    configs = json.load(open('F:/VScode/Pylearn/Test_1/config.json', 'r'))
+    configs = json.load(open('config.json', 'r'))
     if not os.path.exists(configs['model']['save_dir']): os.makedirs(configs['model']['save_dir'])
 
     data = DataLoader(
@@ -132,9 +132,9 @@ def main():
     #save
     Metrics = np.vstack((rmse, mre, r))
     data_evaluate = pd.DataFrame(Metrics)
-    data_evaluate.to_csv('F:/VScode/Pylearn/Test_1/figures/Metrics.csv')
-    np.savetxt('F:/VScode/Pylearn/Test_1/figures/y_test.csv', y_test_all, delimiter=',')
-    np.savetxt('F:/VScode/Pylearn/Test_1/figures/predictions.csv', predictions_all, delimiter=',')
+    data_evaluate.to_csv('figures/Metrics.csv')
+    np.savetxt('figures/y_test.csv', y_test_all, delimiter=',')
+    np.savetxt('figures/predictions.csv', predictions_all, delimiter=',')
     print('[File] File Saved.')
 
 if __name__ == '__main__':
