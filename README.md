@@ -1,21 +1,62 @@
-# LSTM Neural Network for Time Series Prediction
+# LSTM Keras solar predict
 
-LSTM built using the Keras Python package to predict time series steps and sequences. Includes sine wave and stock market data.
+Predict solar with LSTM using keras. 
 
-## Requirements
+This project is based on https://github.com/jaungiers/LSTM-Neural-Network-for-Time-Series-Prediction. 
 
-Install requirements.txt file to make sure correct versions of libraries are being used.
+## **Add:**
 
-* Python 3.5.x
-* TensorFlow 1.10.0
-* Numpy 1.15.0
-* Keras 2.2.2
-* Matplotlib 2.2.2
+#### something is added for solar predicting , including:
 
-Output for sine wave sequential prediction:
+Evaluate function
 
-![Output for sin wave sequential prediction](https://www.altumintelligence.com/assets/time-series-prediction-using-lstm-deep-neural-networks/sinwave_full_seq.png)
+Model improvement
 
-Output for stock market multi-dimensional multi-sequential predictions:
+Normalise and De-normalise
 
-![Output for stock market multiple sequential predictions](https://www.altumintelligence.com/assets/time-series-prediction-using-lstm-deep-neural-networks/sp500_multi_2d.png)
+Metrics and Calbacks
+
+
+
+## Result:
+
+### predict 1 day :
+
+just means the accuracy of predicting 1 day
+
+![predict result for 1 day](E:\Git\image\fig_predict.png)
+
+![loss](E:\Git\image\fig_loss.png)
+
+### predict 54 days:
+
+#### low solar(from 2007.1.11 70-90 sfu)
+
+![](E:\Git\image\low.png)
+
+R = 0.75
+
+MRE = 0.035
+
+#### mid solar(from 2012.08.17 100-150 sfu)
+
+![](E:\Git\image\mid.png)
+
+R = 0.78
+
+MRE = 0.088
+
+#### high solar(from 1997.07.14 100-150 sfu)
+
+![](E:\Git\image\high.png)
+
+R = 0.76
+
+MRE = 0.135
+
+
+
+
+
+
+
