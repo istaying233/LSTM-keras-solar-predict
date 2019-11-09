@@ -7,7 +7,7 @@ import tensorflow as tf
 from tensorflow import placeholder
 
 data = []
-data_txt_18 = np.array(np.loadtxt('F:/VScode/Pylearn/Test_1/data/CHAMP/CHAMP_Density_04_018_v1.txt'))
+data_txt_18 = np.array(np.loadtxt('data/CHAMP/CHAMP_Density_04_018_v1.txt'))
 c = [0, 15]
 data_txt_18 = data_txt_18[:, c]
 a1 = 1.32e-12
@@ -21,7 +21,7 @@ for i in range(len(data_txt_18[:, 0])):
         data.append(data_txt_18[i, 0])
 print(len(data))
 
-txtpath = 'F:/VScode/Pylearn/Test_1/data/CHAMP/'
+txtpath = 'data/CHAMP/'
 txttype = 'txt'
 txtlists = os.listdir(txtpath)
 data_20 = []
