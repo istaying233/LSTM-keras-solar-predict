@@ -32,7 +32,7 @@ just means the accuracy of predicting 1 day
 
 #### low solar(from 2007.1.11 70-90 sfu)
 
-![](E:\Git\image\low.png)
+![](https://github.com/istaying233/LSTM-keras-solar-predict/blob/master/eve/low/l_2/fig_predict.png)
 
 R = 0.75
 
@@ -40,7 +40,7 @@ MRE = 0.035
 
 #### mid solar(from 2012.08.17 100-150 sfu)
 
-![](E:\Git\image\mid.png)
+![](https://github.com/istaying233/LSTM-keras-solar-predict/blob/master/eve/mid/fig_predict.png)
 
 R = 0.78
 
@@ -48,7 +48,7 @@ MRE = 0.088
 
 #### high solar(from 1997.07.14 100-150 sfu)
 
-![](E:\Git\image\high.png)
+![](https://github.com/istaying233/LSTM-keras-solar-predict/blob/master/eve/high/fig_predict.png)
 
 R = 0.76
 
