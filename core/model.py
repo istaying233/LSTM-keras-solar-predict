@@ -91,7 +91,7 @@ class Model():
 			callbacks=callbacks
 		)
 		self.model.save(save_fname)
-		filepath_save = 'F:/VScode/Pylearn/Test_1/saved_models/F10.7_LSTM_100.h5'
+		filepath_save = 'saved_models/F10.7_LSTM_100.h5'
 		self.model.save(filepath_save)
 		print('[Model] Training Completed. Model saved as %s' % filepath_save)
 		self.model.summary()
@@ -138,7 +138,7 @@ class Model():
 		#data_evaluate = np.vstack((loss, val_loss, acc, val_acc))
 		data_evaluate = np.vstack((loss, val_loss))
 		data_evaluate = pd.DataFrame(data_evaluate)
-		data_evaluate.to_csv('F:/VScode/Pylearn/Test_1/figures/data_evaluate.csv')
+		data_evaluate.to_csv('figures/data_evaluate.csv')
 		fig_loss = plt.figure(facecolor='white')
 		plt.plot(self.history.history['loss'], label='train_loss')
 		plt.plot(self.history.history['val_loss'], label='test_loss')
@@ -147,7 +147,7 @@ class Model():
 		plt.ylabel('Loss', fontsize = 12)
 		plt.title('Loss')
 		plt.show()
-		fig_loss.savefig('F:/VScode/Pylearn/Test_1/figures/fig_loss.png')
+		fig_loss.savefig('figures/fig_loss.png')
 		#pyplot.ion()
 		#pyplot.pause(5)
 		#pyplot.close()
@@ -161,7 +161,7 @@ class Model():
 		plt.ylabel('Acc', fontsize = 12)
 		plt.title('Acc')
 		plt.show()
-		fig_acc.savefig('F:/VScode/Pylearn/Test_1/figures/fig_mre.png')
+		fig_acc.savefig('figures/fig_mre.png')
 		print('[File] Evaluate file saved.')
 		"""
 		error = []
