@@ -24,9 +24,9 @@ Metrics and Calbacks
 
 just means the accuracy of predicting 1 day
 
-![predict result for 1 day](E:\Git\image\fig_predict.png)
+![](https://github.com/istaying233/LSTM-keras-solar-predict/blob/master/eve/F10.7/fig_predict.png)
 
-![loss](E:\Git\image\fig_loss.png)
+![](https://github.com/istaying233/LSTM-keras-solar-predict/blob/master/eve/F10.7/fig_loss.png)
 
 ### predict 54 days:
 
