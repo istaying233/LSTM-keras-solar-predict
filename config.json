@@ -1,6 +1,6 @@
 {
 	"data": {
-		"filename": "F:/VScode/Pylearn/Test_1/data/F10.7.csv",
+		"filename": "data/F10.7.csv",
 		"columns": [
 			"velocity",
 			"density"
