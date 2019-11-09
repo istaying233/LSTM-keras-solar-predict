@@ -1,0 +1,45 @@
+{
+	"data": {
+		"filename": "F:/VScode/Pylearn/Test_1/data/F10.7.csv",
+		"columns": [
+			"velocity",
+			"density"
+		],
+		"sequence_length": 28,
+		"train_test_split": 0.7,
+		"normalise": true,
+		"output_dim": 54
+	},
+	"training": {
+		"epochs": 20,
+		"batch_size": 32,
+		"validation_split": 0.2 
+	},
+	"model": {
+		"loss": "mse",
+		"optimizer": "rmsprop",
+		"save_dir": "saved_models",
+		"layers": [
+			{
+				"type": "lstm",
+				"neurons":512,
+				"input_timesteps": 27,
+				"input_dim": 3,
+				"return_seq": false
+			},
+			{
+				"type": "dropout",
+				"rate": 0.5
+			},
+			{
+				"type": "dense",
+				"neurons": 512,
+				"activation": "relu"
+			},
+			{
+				"type": "dense",
+				"neurons": 54
+			}
+		]
+	}
+}
